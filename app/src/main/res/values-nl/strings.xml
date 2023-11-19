@@ -2,12 +2,12 @@
   <string name="app_name">SaverTuner</string>
   <string name="title_permission">Rechten</string>
   <string name="permission_message">We hebben speciale toestemming nodig om door te gaan.  Gebruik ADB om de volgende opdracht uit te voeren (één regel):</string>
-  <string name="permission_command" translatable="false">adb shell pm verlenen s1m.savertuner android.permission.WRITE_SECURE_SETTINGS</string>
-  <string name="permission_command_with_user" translatable="false">adb shell pm Grant --gebruiker %1$s s1m.savertuner android.permission.WRITE_SECURE_SETTINGS</string>
+ <string name="permission_command" translatable="false">adb shell pm grant s1m.savertuner android.permission.WRITE_SECURE_SETTINGS</string>
+  <string name="permission_command_with_user" translatable="false">adb shell pm grant --user %1$s s1m.savertuner android.permission.WRITE_SECURE_SETTINGS</string>
   <string name="please_wait">Wachten op toestemming</string>
   <string name="copied">Gekopieerd naar het klembord</string>
   <string name="snackbar_intent_failed">Kan deze actie niet verwerken</string>
-  <string name="snackbar_failed_to_apply">Kan niet solliciteren;  apparaat is waarschijnlijk incompatibel</string>
+  <string name="snackbar_failed_to_apply">Kan niet toepassen;  apparaat is waarschijnlijk incompatibel</string>
   <string name="snackbar_low_power">Wijzigingen worden van kracht wanneer het apparaat zich in de batterijbesparingsmodus bevindt</string>
   <string name="snackbar_applied">Profiel succesvol toegepast</string>
   <string name="snackbar_reset">Profiel opnieuw ingesteld</string>
