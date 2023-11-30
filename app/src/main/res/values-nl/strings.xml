@@ -60,7 +60,7 @@
   <string name="pref_config_title_optional_sensors_enabled">Optionele sensoren inschakelen</string>
   <string name="pref_config_summary_optional_sensors_enabled">Sta onnodige sensorverzoeken toe (d.w.z. randsensoren)</string>
   <string name="pref_config_title_aod_enabled">Always-on-display inschakelen</string>
-  <string name="pref_config_summary_aod_enabled">Geef de AOD weer in de slaapmodus</string>
+  <string name="pref_config_summary_aod_enabled">Gebruik always-on-display in slaapmodus</string>
   <string name="pref_config_title_quick_doze_enabled">Diepe slaap inschakelen</string>
   <string name="pref_config_summary_quick_doze_enabled">Ga naar de diepe slaap zodra het scherm is uitgeschakeld</string>
   <string name="pref_source_title">Broncode</string>
