@@ -3,7 +3,7 @@ steps:
         image: runmymind/docker-android-sdk:latest
         when:
           branch: main
-          event: [push, pull_request]
+          event: [push, pull_request, manual]
         commands:
           - ./gradlew build --stacktrace
 
