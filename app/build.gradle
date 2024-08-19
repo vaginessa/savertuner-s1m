@@ -43,6 +43,7 @@ android {
     namespace 'com.draco.buoy'
     lint {
         disable 'MissingTranslation'
+        baseline = file("lint-baseline.xml")
     }
 
     if (project.hasProperty('sign')) {
