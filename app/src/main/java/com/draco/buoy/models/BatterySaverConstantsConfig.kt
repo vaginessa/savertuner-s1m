@@ -79,6 +79,8 @@ data class BatterySaverConstantsConfig(
 
         for ((key, value) in keyValueMap) {
             when (key) {
+                // Some constant are common pre 32 and post 32,
+                // They do the same action
                 BatterySaverConstants31.ADVERTISE_IS_ENABLED -> advertiseIsEnabled = value.toBoolean()
                 BatterySaverConstants31.DATASAVER_DISABLED -> dataSaverDisabled = value.toBoolean()
                 BatterySaverConstants31.ENABLE_NIGHT_MODE -> enableNightMode = value.toBoolean()
@@ -97,9 +99,9 @@ data class BatterySaverConstantsConfig(
                 BatterySaverConstants31.OPTIONAL_SENSORS_DISABLED -> optionalSensorsDisabled = value.toBoolean()
                 BatterySaverConstants31.AOD_DISABLED -> aodDisabled = value.toBoolean()
                 BatterySaverConstants31.QUICK_DOZE_ENABLED -> quickDozeEnabled = value.toBoolean()
-                BatterySaverConstants32.ADVERTISE_IS_ENABLED -> advertiseIsEnabled = value.toBoolean()
+                // BatterySaverConstants32.ADVERTISE_IS_ENABLED -> advertiseIsEnabled = value.toBoolean()
                 BatterySaverConstants32.ENABLE_DATASAVER -> dataSaverDisabled = !value.toBoolean()
-                BatterySaverConstants32.ENABLE_NIGHT_MODE -> enableNightMode = value.toBoolean()
+                // BatterySaverConstants32.ENABLE_NIGHT_MODE -> enableNightMode = value.toBoolean()
                 BatterySaverConstants32.DISABLE_LAUNCH_BOOST -> launchBoostDisabled = value.toBoolean()
                 BatterySaverConstants32.DISABLE_VIBRATION -> vibrationDisabled = value.toBoolean()
                 BatterySaverConstants32.DISABLE_ANIMATION -> animationDisabled = value.toBoolean()
@@ -109,9 +111,9 @@ data class BatterySaverConstantsConfig(
                 BatterySaverConstants32.ENABLE_FIREWALL -> fireWallDisabled = !value.toBoolean()
                 BatterySaverConstants32.LOCATION_MODE -> gpsMode = value.toInt()
                 BatterySaverConstants32.ENABLE_BRIGHTNESS_ADJUSTMENT -> adjustBrightnessDisabled = !value.toBoolean()
-                BatterySaverConstants32.ADJUST_BRIGHTNESS_FACTOR -> adjustBrightnessFactor = value.toFloat()
-                BatterySaverConstants32.FORCE_ALL_APPS_STANDBY -> forceAllAppsStandby = value.toBoolean()
-                BatterySaverConstants32.FORCE_BACKGROUND_CHECK -> forceBackgroundCheck = value.toBoolean()
+                // BatterySaverConstants32.ADJUST_BRIGHTNESS_FACTOR -> adjustBrightnessFactor = value.toFloat()
+                // BatterySaverConstants32.FORCE_ALL_APPS_STANDBY -> forceAllAppsStandby = value.toBoolean()
+                // BatterySaverConstants32.FORCE_BACKGROUND_CHECK -> forceBackgroundCheck = value.toBoolean()
                 BatterySaverConstants32.DISABLE_OPTIONAL_SENSORS -> optionalSensorsDisabled = value.toBoolean()
                 BatterySaverConstants32.DISABLE_AOD -> aodDisabled = value.toBoolean()
                 BatterySaverConstants32.ENABLE_QUICK_DOZE -> quickDozeEnabled = value.toBoolean()
