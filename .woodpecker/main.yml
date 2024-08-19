@@ -1,6 +1,6 @@
 steps:
     check:
-        image: runmymind/docker-android-sdk:latest
+        image: mobiledevops/android-sdk-image:latest
         when:
           branch: main
           event: [push, pull_request, manual]
@@ -8,7 +8,7 @@ steps:
           - ./gradlew build --stacktrace
 
     build:
-        image: runmymind/docker-android-sdk:latest
+        image: mobiledevops/android-sdk-image:latest
         when:
           branch: main
           event: tag
